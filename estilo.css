@@ -29,8 +29,8 @@ body{
 
 .hero h1 {
     font-family: 'Caveat', cursive;
-    color: rgb(188, 220, 198);
-    text-shadow: #000000 4px 5px;
+    color: rgb(35, 200, 87);
+    text-shadow: #acd3b5 4px 5px;
     font-size: 80px;
     font-style: italic;
 
@@ -71,7 +71,7 @@ body{
     border: none;
     font-size: 18px;
     font-weight: 600;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgb(148, 141, 141) 0px 5px 15px;
     text-align: center;
     justify-content: center;
 }
@@ -104,7 +104,7 @@ body{
     gap: 5px;
     width: fit-content;
     border-radius: 5px;
-    box-shadow:rgba(0, 0, 0, 1) 10px 10px 20px;;
+    box-shadow:rgb(79, 76, 76) 10px 10px 20px;;
 }
 
 .nombre {
@@ -123,7 +123,7 @@ body{
     font-size: 22px;
     font-size: 16px;
     
-    color: #000000;
+    color: #4f8306;
 }
 
 .pizzaImgContainer img{
@@ -140,12 +140,12 @@ body{
     text-overflow: ellipsis;
     text-align: center;
     font-style: italic;
-    color: #ff8b8b
+    color: #479e51;
 }
 
 .precio {
     text-align: center;
-    color: #000000;
+    color: #479e51;
     font-size: 20px;
 }
 

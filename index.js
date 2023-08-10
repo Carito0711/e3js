@@ -2,7 +2,7 @@ const pizzas = [
     {
       id: 1,
       nombre: "PIZZA DE MUZARELLA",
-      precio: 500,
+      precio: 950,
       ingredientes: ["Muzzarella", "Tomate", "Aceitunas"],
       imagen: "./IMG/muzzarella.png",
     },
@@ -18,7 +18,7 @@ const pizzas = [
     {
       id: 3,
       nombre: "PIZZA 4 QUESOS",
-      precio: 1380,
+      precio: 1300,
       ingredientes: [
         "Muzzarella",
         "Tomate",
@@ -32,7 +32,7 @@ const pizzas = [
     {
       id: 4,
       nombre: "PIZZA ESPECIAL",
-      precio: 1000,
+      precio: 2100,
       ingredientes: ["Muzzarella", "Tomate", "Rucula", "Jamón"],
       imagen: "./IMG/especial.png",
     },
@@ -40,7 +40,7 @@ const pizzas = [
     {
       id: 5,
       nombre: "PIZZA DE ANANA",
-      precio: 600,
+      precio: 1500,
       ingredientes: ["Muzzarella", "Tomate", "Anana"],
       imagen: "./IMG/anana.png",
     },
