@@ -65,26 +65,30 @@ body{
 
 #submit-btn{
     color: rgb(255, 255, 255);
-    background-color: #ff4545;
+    background-color: #02ba4f;
     padding: 5px 10px;
     border-radius: 10px;
     border: none;
     font-size: 18px;
     font-weight: 600;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+    justify-content: center;
 }
 #submit-btn:hover {
-    background-color: #ff8b8b;
+    background-color: #ad0505;
   }
   
 #container{
     display: flex;
     flex-direction: column;
     padding: 30px;
+    justify-content: center; 
+
 }
 
 .ultima{
-    color: white;
+    color: rgb(29, 250, 22);
     text-align: center;
     font-size: 24px;
     padding: 10px;
@@ -109,7 +113,7 @@ body{
     align-items: center;
     justify-content: center;
     font-size: 30px;
-    color: #ff4545;
+    color: #15dc0e;
     font-family: 'Orbitron', sans-serif;    
     font-size: 22px;
 }
