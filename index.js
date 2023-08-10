@@ -4,7 +4,7 @@ const pizzas = [
       nombre: "PIZZA DE MUZARELLA",
       precio: 500,
       ingredientes: ["Muzzarella", "Tomate", "Aceitunas"],
-      imagen: "./img/muzzarella.png",
+      imagen: "./IMG/muzzarella.png",
     },
   
     {
@@ -12,7 +12,7 @@ const pizzas = [
       nombre: "PIZZA DE CEBOLLA",
       precio: 1500,
       ingredientes: ["Muzzarella", "Tomate", "Cebolla"],
-      imagen: "./img/cebolla.png",
+      imagen: "./IMG/cebolla.png",
     },
   
     {
@@ -26,7 +26,7 @@ const pizzas = [
         "Parmesano",
         "Roquefort",
       ],
-      imagen: "./img/4quesos.png",
+      imagen: "./IMG/4quesos.png",
     },
   
     {
@@ -34,7 +34,7 @@ const pizzas = [
       nombre: "PIZZA ESPECIAL",
       precio: 1000,
       ingredientes: ["Muzzarella", "Tomate", "Rucula", "Jamón"],
-      imagen: "./img/especial.png",
+      imagen: "./IMG/especial.png",
     },
   
     {
@@ -42,11 +42,10 @@ const pizzas = [
       nombre: "PIZZA DE ANANA",
       precio: 600,
       ingredientes: ["Muzzarella", "Tomate", "Anana"],
-      imagen: "./img/anana.png",
+      imagen: "./IMG/anana.png",
     },
   ];
   
-  // Declaro los elementos del HTML
   const form = document.getElementById("form")
   const container = document.getElementById("container")
   const error = document.getElementById("error")
@@ -58,15 +57,12 @@ const pizzas = [
     form.addEventListener("submit", searchPizza);
   }
   
-  // Guardar en local storage la pizza buscada
   const saveToLocalStorage = (last) =>{
     localStorage.setItem("ultimoItem", JSON.stringify(last));
   };
   
-  // Declaro una constante de ultimoItem para poder renderizarlo, traigo el dato del local storage
   const ultimoItem = JSON.parse (localStorage.getItem("ultimoItem"))
   
-  // Esta función indica que si hay un ultimoItem guardado lo renderice
   const recuperarPizza = () =>{
     if (ultimoItem) {
       container.innerHTML =`<div id="card-container"><h3 class="nombre"><span>#${ultimoItem.id}</span>${ultimoItem.nombre}</h3>
@@ -78,14 +74,10 @@ const pizzas = [
         container.innerHTML =""
       }
   }
-  
-  // Creo una constante donde pizza es igual a "buscar en pizza la pizza cuyo ID sea igual al input value, es decir al inputNumber" 
-  // Despues lo meto dentro de search pizza, transformandolo en una funcion
-  
+    
   const searchPizza = (e) =>{
     e.preventDefault()
   
-    // aca valido que no se ingrese datos vacíos
     if(inputNumber.value ==""){
       container.innerHTML=`<div id="card-container">
       <p class="error" id="error">SOLO INGRESAR NUMEROS</p>
@@ -94,14 +86,12 @@ const pizzas = [
   form.reset();
     } else {
   
-      // Búsqueda de la ID de la pizza, va a retornar la info de la pizza seleccionada
       const buscarID = (inputNumber) =>{
         return pizzas.find ((pizza) => pizza.id == inputNumber.value )
       }
   
       if (buscarID){
         error.textContent=""
-        // Guardo la info de la pizza seleccionada para poder ingresarla como parametro en el renderizado.
         let pizza = buscarID(inputNumber)
         if (pizza) {
         recuperarPizza(ultimoItem)
