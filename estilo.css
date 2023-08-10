@@ -1,0 +1,156 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Caveat', cursive;
+
+
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-image:url(IMG/d4d5f842c040915ae93e78310207e9e5.jpg);
+    background-size: cover;
+}
+
+.hero{
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+}
+
+.hero h1 {
+    font-family: 'Caveat', cursive;
+    color: rgb(188, 220, 198);
+    text-shadow: #000000 4px 5px;
+    font-size: 80px;
+    font-style: italic;
+
+}
+
+.hero h2{
+    font-family: 'Caveat', cursive;
+    font-size: 22px;
+    color: rgb(188, 220, 198);
+
+
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+
+
+
+#input-number{
+    font-size: 18px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+#submit-btn{
+    color: rgb(255, 255, 255);
+    background-color: #ff4545;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#submit-btn:hover {
+    background-color: #ff8b8b;
+  }
+  
+#container{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.ultima{
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    padding: 10px;
+}
+
+#card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #3b3d3a;
+    padding: 15px;
+    gap: 5px;
+    width: fit-content;
+    border-radius: 5px;
+    box-shadow:rgba(0, 0, 0, 1) 10px 10px 20px;;
+}
+
+.nombre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #ff4545;
+    font-family: 'Orbitron', sans-serif;    
+    font-size: 22px;
+}
+
+.nombre span{
+    font-family: 'Orbitron', sans-serif;    
+    font-size: 22px;
+    font-size: 16px;
+    
+    color: #000000;
+}
+
+.pizzaImgContainer img{
+    width: 200x;
+    height: 200px;
+    border-radius: 10px;
+    border:#ffffff 2px solid;
+    box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+}
+
+.ingredientes{
+    max-width: 200px;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    text-align: center;
+    font-style: italic;
+    color: #ff8b8b
+}
+
+.precio {
+    text-align: center;
+    color: #000000;
+    font-size: 20px;
+}
+
+.error {
+    color: #ff4545;
+    font-style: italic;
+    text-align: center;
+}
+
+.hidden {
+    visibility: hidden;
+}
